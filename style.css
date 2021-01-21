@@ -1,0 +1,705 @@
+/* default css */
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1150px;
+    margin: auto;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+img{
+    max-width: 100%;
+}
+.mt-140{
+    margin-top: 140px;
+}
+.mb-100{
+    margin-bottom: 100px;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* fonts */
+@font-face{
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    font-family: 'Roboto', sans-serif;
+}
+@font-face{
+    @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    font-family: 'Rubik', sans-serif;
+}
+
+
+/* ==========header css start========= */
+.header-section{
+    background: url(./img/home-banner.jpg) no-repeat center bottom/cover;
+    height: 900px;
+}
+.header-title{
+    padding-top: 20px;
+}
+.navigation{
+    gap: 50px;
+}
+/* primary menu */
+
+.menu-area ul li {
+    display: inline-block;
+    
+}
+.menu-area ul li a{
+    display: block;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    color: #002347;
+    font-weight: 600;
+    padding: 15px 20px;
+    transition: all 0.4s ease;
+}
+.menu-area ul li .first-item{
+    color: #fdc632;
+}
+.menu-area ul li:hover > a{
+    color: #fdc632;
+}
+
+/* sub menu */
+.menu-area ul li{
+    position: relative;
+}
+.menu-area ul li ul{
+    position: absolute;
+    left: 0;
+    top: 140%;
+    width: 180px;
+    background-color: #fff;
+    transition: all 0.5s ease;
+    margin-left: 20px;
+}
+.menu-area ul li ul li{
+    border-bottom: 1px solid #ddd;
+    display: block;
+}
+
+.menu-area ul li ul li a:hover{
+    background-color: #fdc632;
+    color: #fff;
+}
+
+/* hover part */
+.menu-area ul ul{
+    opacity: 0;
+    visibility: hidden;
+}
+.menu-area ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+
+
+/* search area css */
+
+.search-area a i{
+    color: #002347;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.4s ease;
+}
+.search-area a i:hover{
+    color: #fdc632;
+}
+
+/* header content */
+.header-content{
+    margin-top: 200px;
+}
+.header-content h4{
+    font-family: 'Rubik', sans-serif;
+    color: #002347;
+    font-size: 20px;
+    font-weight: 600;
+}
+.header-content h1 {
+    font-family: 'Roboto', sans-serif;
+    color: #002347;
+    font-size: 45px;
+    font-weight: 600;
+    margin-top: 35px;
+    margin-bottom: 60px;
+}
+
+.header-content .btn a {
+    padding: 18px 45px;
+    margin-right: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.header-content .btn-1 a {
+    background-color: #002347;
+    color: #fdc632;
+    border: 1px solid transparent;
+    transition: all 0.4s ease;
+}
+.header-content .btn-2 a {
+    margin-right: 0;
+    background-color: #fdc632;
+    color: #002347;
+    border: 1px solid transparent;
+    transition: all 0.4s ease;
+}
+
+/* hover part */
+
+.header-content .btn-1 a:hover{
+    background-color: #eeebee;
+    color: #002347;
+    border: 1px solid #002347;
+}
+.header-content .btn-2 a:hover{
+    background-color: #002347;
+    color: #fdc632;
+}
+/* ======header css end=========== */
+
+/* =========awesome feature css start============ */
+
+.default-title h3{
+    color: #002347;
+    font-family: 'Roboto', sans-serif;
+    font-size: 33px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.default-title p{
+    font-family: 'Roboto', sans-serif;
+    color: #a79d9d;
+    font-style: italic;
+}
+.feature-content{
+    gap: 35px;
+}
+.single-feature{
+    background-color: #f9f9ff;
+    padding: 35px;
+    transition: all 0.5s ease;
+}
+.single-feature i{
+    color: #002347;
+    font-size: 50px;
+}
+.single-feature h4{
+    font-family: 'Roboto', sans-serif;
+    color: #002347;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+.single-feature span{
+    font-family: 'Roboto', sans-serif;
+    color: #a79d9d;
+    line-height: 25px;
+}
+
+/* hover part */
+
+.single-feature:hover{
+    box-shadow: 0px 10px 30px rgba(0,35,71,.1);
+}
+/* =========awesome feature css end============ */
+
+/* ========popular courses css start=========== */
+.course{
+    gap: 50px;
+}
+.single-course{
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+.c-img img{
+    display: block;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+.c-content{
+    background-color: #f9f9ff;
+    padding: 12px 28px;
+    position: relative;
+    transition: all 0.5s ease;
+}
+.c-content .price{
+    position: absolute;
+    top: -34px;
+    right: 18px;
+    background-color: #fdc632;
+    color: #002347;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    border-radius: 50%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 21px;
+    transition: all 0.5s ease;
+}
+.c-content .design{
+    display: inline-block;
+    background-color: #002347;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    padding: 8px 23px;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 28px;
+}
+.c-content .c-name{
+    font-family: 'Roboto', sans-serif;
+    color: #002347;
+    font-size: 21px;
+    margin-bottom: 13px;
+    transition: all 0.5s ease;
+}
+.c-content .about-course{
+    font-family: 'Roboto', sans-serif;
+    color: #8b9299;
+    margin-bottom: 22px;
+    line-height: 25px;
+    font-size: 17px;
+}
+.author{
+    gap: 10px;
+}
+.a-country p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #002347;
+}
+.stats{
+    gap: 35px;
+}
+.user-stats i{
+    color: #002347;
+}
+.user-stats .user-number{
+    font-family: 'Roboto', sans-serif;
+    color: #002347;
+}
+.like-stats i{
+    color: #002347;
+}
+.like-stats .liker-number{
+    font-family: 'Roboto', sans-serif;
+    color: #002347;
+}
+
+/* hover part */
+.single-course:hover .c-img img{
+    transform: scale(1.2);
+}
+
+.single-course:hover .c-content .price{
+    background-color: #002347;
+    color: #fdc632;
+}
+.single-course:hover .c-content .c-name{
+    color: #fdc632;
+}
+.single-course:hover .c-content{
+    color: #fff;
+}
+.single-course:hover{
+    box-shadow: 0px 10px 30px rgba(0,35,71,.1);
+}
+/* ========popular courses css end============*/
+
+/* =============register now css start=========== */
+.register-now{
+    background-color: #002347;
+}
+.register{
+    gap: 120px;
+}
+.register-content h2,p{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+.register-content h2{
+    font-size: 40px;
+    margin-bottom: 18px;
+}
+.register-content p{
+    font-size: 16px;
+    margin-bottom: 110px;
+    font-weight: 600;
+    padding-right: 50px;
+}
+.r-box{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.r-box .box{
+    width: 155px;
+    height: 120px;
+    background-color: #334f6c;
+    text-align: center;
+    line-height: 120px;
+    border-radius: 5px;
+    border: 1px solid rgb(175, 175, 175);
+}
+.box .number{
+    color: #fff;
+    font-family: 'Rubik', sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+}
+.box .time{
+    color: #fff;
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    font-weight: 500;;
+}
+
+/* form */
+.register-form{
+    background-color: #fff;
+    width: 440px;
+    padding: 45px;
+    margin: 125px 0;
+}
+.form-title h4{
+    font-family: 'Rubik', sans-serif;
+    color: #002347;
+    font-size: 27px;
+}
+.form-title p{
+    color: #828a90;
+    margin-bottom: 23px;
+    margin-top: 5px;
+    font-size: 17px;
+}
+.form-div{
+    width: 250px;
+}
+.input input{
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    color: #aaaaaa;
+    border: none;
+    padding: 15px 0px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+}
+.submit-btn a {
+    color: #002347;
+    background-color: #fdc632;
+    display: block;
+    text-align: center;
+    padding: 17px 0;
+    margin-top: 30px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+
+/* hover part */
+.submit-btn a:hover{
+    background-color: #002347;
+    color: #fdc632;
+}
+input:focus{
+    outline: 0;
+}
+/* =============register now css end=========== */ 
+
+/* ============trainer section css start============ */
+.trainer-content{
+    gap: 30px;
+}
+.t-img img{
+    width: 100%;
+    display: block;
+}
+.t-bio{
+    box-shadow: 0 0 30px rgba(153,153,153,.13);
+    transition: all 0.5s ease;
+}
+.t-bio h4{
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    color: #002347;
+    margin-top: 20px;
+    margin-bottom: 3px;
+}
+.t-bio span{
+    font-family: 'Rubik', sans-serif;
+    color: #7b838a;
+    font-size: 15px;
+    margin-bottom: 35px;
+    display: inline-block;
+}
+.t-bio p{
+    font-family: 'Rubik', sans-serif;
+    color: #7b838a;
+    margin-bottom: 30px;
+    padding: 0px 24px;
+}
+.t-social ul li{
+    display: inline-block;
+}
+.t-social ul li a{
+    display: inline-block;
+    padding: 0 7px;
+    color: #80878e;
+    margin-bottom: 20px;
+    transition: all 0.5s ease;
+}
+/* hover part */
+.t-social ul li a:hover{
+    color: #fdc632;
+}
+.single-trainer:hover .t-bio{
+    box-shadow: 0px 10px 30px rgba(0,35,71,.1);
+}
+/* ============trainer section css end============ */
+
+/* =======upcoming event css start=========== */
+.upcoming-events{
+    background-color: #002347;
+    padding-bottom: 180px;
+}
+.e-title h3{
+    color: #fff;
+    padding-top: 110px;
+}
+.event-content{
+    gap: 30px;
+}
+.single-event{
+    position: relative;
+}
+.e-img img{
+    width: 100%;
+    display: block;
+    transition: all 0.5s ease;
+}
+.e-details {
+    background-color: rgba(0, 35, 71, 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 290px;
+    padding: 5px 26px;
+    box-sizing: border-box;
+}
+.e-details .e-content{
+    margin-bottom: 30px;
+    line-height: 25px;
+}
+.event-date-time{
+    display: flex;
+    margin: 25px 0;
+}
+.e-date h4 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 27px;
+    color: #fdc632;
+    margin-top: -4px;
+}
+.e-date p{
+    color: #fff;
+    font-family: 'Rubik', sans-serif;
+}
+.e-date{
+    border-right: 2px solid #fff;
+    padding-right: 15px;
+}
+.e-time {
+    margin-left: 15px;
+}
+p.time {
+    margin-top: 2x;
+    margin-bottom: 5px;
+}
+.e-time .time i{
+    font-size: 13px;
+}
+.e-time .time i span{
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.e-time .date i{
+    font-size: 13px;
+}
+.e-time .date i span{
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    margin-left: 10px;
+}
+a.event-btn {
+    background: #fdc632;
+    color: #002347;
+    font-family: 'Rubik', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 17px 40px;
+    display: inline-block;
+    margin-bottom: 31px;
+    transition: all 0.3s ease;
+}
+/* hover part */
+a.event-btn:hover{
+    background-color: #002347;
+    color: #fdc632;
+}
+.e-img{
+    overflow: hidden;
+}
+.e-img img:hover{
+    transform: scale(1.1);
+}
+/* =======upcoming event css end=========== */
+
+/*======= clients say section css start======= */
+.clients-content{
+    gap: 55px;
+}
+.single-client {
+    background-color: #fff;
+    height: 240px;
+    padding: 0px 40px;
+    box-shadow: 0px 15px 30px rgba(153,153,153,.13);
+    transition: all 0.5s ease;
+}
+.c-img img {
+    max-width: 100%;
+    width: 365px;
+    height: auto;
+    border-radius: 5px;
+}
+.c-info {
+    padding: 0 40px 0 35px;
+}
+.c-info h4 {
+    color: #002347;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
+}
+.c-info p {
+    font-family: 'Roboto', sans-serif;
+    color: #7b838a;
+    line-height: 25px;
+    margin-top: 15px;
+}
+/* hover part */
+.single-client:hover{
+    box-shadow: 0px 20px 40px rgba(59, 59, 59, 0.13);
+}
+/*======= clients say section css end======= */
+
+/* ======footer section css start========= */
+.footer-section{
+    background-color: #002347;
+    margin-top: 200px;
+    padding: 130px 0;
+}
+.footer-top{
+    display: flex;
+    margin-bottom: 45px;
+}
+.f-content h4{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 45px;
+}
+.f-content ul{
+    margin-right: 80px;
+}
+.f-content ul li{
+    margin-bottom: 20px;
+}
+.f-content ul li a{
+    font-family: 'Roboto', sans-serif;
+    color: #7b838a;
+    transition: all 0.3s ease;
+}
+.f-content p{
+    color: #7b838a;
+    margin-bottom: 30px;
+}
+.f-input{
+    position: relative;
+}
+.f-input input{
+    background-color: #334f6c;
+    border: none;
+    padding: 13px 110px 13px 15px;
+}
+.subscribe-btn a{
+    position: absolute;
+    top: 4px;
+    right: -15px;
+    background-color: #fdc632;
+    font-family: 'Roboto', sans-serif;
+    color: #002347;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 10px 20px;
+    display: block;
+}
+.f-copy{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+.f-copy a{
+    color: #fdc632;
+    font-family: 'Roboto', sans-serif;
+}
+.social-menu ul{
+    margin-top: 30px;
+}
+.social-menu ul li{
+    display: inline-block;
+    
+}
+.social-menu ul li a i{
+    color: #cccccc;
+    background-color: #334f6c;
+    padding: 10px 12px;
+    transition: all 0.4s ease;
+}
+/* hover part */
+.f-content ul li a:hover{
+    color: #fff;
+}
+.social-menu ul li a i:hover{
+    background-color: #fdc632;
+    color: #002347;
+}
+/* ======footer section css end========= */
